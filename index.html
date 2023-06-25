@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Taskia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+      p{
+        color:rgb(195, 195, 195);
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        
+}
+      
+      
+      
+      h1,h2{
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+      }
+    
+
+      .card1{
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: rgba(0, 60, 255, 0.503);
+      width: 300px;
+      height: 350px;     
+      text-align: center;      
+      border-radius: 15px;   
+      font-size: small;   
+  
+    }
+
+    .card2{
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: rgba(109, 112, 121, 0.503);
+      width: 300px;
+      height: 350px;     
+      text-align: center;      
+      border-radius: 15px;
+      font-size: small; 
+    }
+
+    .card3{
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: rgba(238, 187, 86, 0.503);
+      width: 300px;
+      height: 350px;     
+      text-align: center;      
+      border-radius: 15px;
+      font-size: small; 
+     
+    }
+
+    .form-control{
+      display:inline-block; 
+      position:relative;
+      border-radius: 30px;
+      height: 50px;
+      
+    }
+    
+    .larger { 
+      font-size: 600%;
+      color: blue;
+     }
+
+     .card-img-overlay {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+
+     }
+     
+    .navbar-brand{
+      color:rgb(102, 91, 248);
+      font-size: 35px;
+      font-weight: bold;
+      letter-spacing: -1px;
+    
+    }
+
+    .button1{
+      background-color: white;
+      color: rgb(102, 91, 248);
+      border: 2px solid rgb(102, 91, 248);
+      width:120px;
+      height:50px;
+
+    }
+    .button1:hover {
+      background-color: rgb(102, 91, 248);
+      color: white;
+    }
+
+    .button2{
+      margin-left: 20px;
+      font-size: 15px;
+      background-color: rgb(57, 47, 188);
+      color: white;
+      width:120px;
+      height:50px;
+      font-weight: bold;
+    
+    }
+
+  
+
+    .clickable-card {
+  display: inline-block;
+  transition: all 0.4s ease-in-out;
+
+}
+
+.clickable-card h2 {
+  transition: color 0.4s ease-in-out;
+}
+
+.clickable-card img {
+  transform-origin: center;
+  transition: transform 0.4s ease-in-out;
+}
+
+
+.clickable-card:hover h2,
+.clickable-card:focus h2 {
+  color: #28666e;
+}
+
+.clickable-card:hover img,
+.clickable-card:focus img {
+  transform: scale(1.1);
+}
+    
+    
+  </style>
+  
+  
+  
+  
+  
+  
+  </head>
+  <body>
+    <header class="container-fluid">
+        <div>
+            <nav class="navbar mt-3">
+                <div class="container">
+                  <a class="navbar-brand"><strong>Taskia</strong></a>
+                  <form class="d-flex" role="search">
+                    <button class="btn btn-outline-success button1 rounded-pill" type="submit">Try Free</button>
+                  </form>
+                </div>
+              </nav>
+        </div>
+
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container ">
+              <div class="row mt-5 gy-5">
+            
+                <div class="col-sm gx-5 pt-5">
+                  <h2>Task management <br> and lists tool</h2>
+                  <div class="row mt-4" id="slide">
+                    <p>We believe that designing products and services in close <br>
+                      partnership with our clients is the only way to have a real <br>
+                      impact on their business.</p>
+                    <form name="form1" action="#">
+                      <div class="form-group mt-3 col-sm">                   
+                        <input type="email" name='text1' id="email1" class="form-control" style="width: 250px;" placeholder="Name@company.com" required>
+                            
+                        <input type="submit" name="Validate" class="btn rounded-pill button2" display="inline-block" value="Try It Free" onclick="ValidateEmail(document.form1.text1)" >
+                          
+                      </div>
+                    </form>
+
+                    <script src="email.js"></script>
+
+                  </div>
+                </div>   
+
+    
+                <div class="col-sm heroimage">
+                  <img id="img1" width="700px;" src="Images/hero image.jpg">
+             
+                </div>                   
+              </div>                            
+          </div>
+        </div>
+      </header>
+
+
+    <section class="container col-sm">
+      <div class="row mt-5 gy-5"></div>
+      <div class="row mt-5 gy-5">
+        <div class="col-md-12 text-center">
+          <h1>Featured Services that We Provide</h1>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+    <section class="container mt-5">
+      <div class="row gy-5 gx-1">
+        <a class="clickable-card">
+          
+          <div class="row mt-5 gy-5">
+          
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+              <div class="card mt-1 py-5 card1">
+                <img class="card-img" src="Images/Image 3.png" alt="">
+                <div class="card-img-overlay d-flex flex-column justify-content-center">
+                  <h4 class="card-title">Keep tasks in <br>
+                    one place</h4>
+                  
+                  <p class="card-text text-white">Save time, avoid losing work and <br>
+                    information, delegate, and track tasks to <br>
+                    stay on schedule </p>
+                
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+              <div class="card mt-5 py-5 card2">
+                <img class="card-img" src="Images/Image 2.png" alt="">
+                <div class="card-img-overlay d-flex flex-column justify-content-center">
+                  <h4 class="card-title">Keep tasks in <br>
+                    one place</h4>
+                  
+                  <p class="card-text text-black">Save time, avoid losing work and <br>
+                    information, delegate, and track tasks to <br>
+                    stay on schedule </p>
+                
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+              <div class="card  mt-3 py-5 card3">
+                <img class="card-img" src="Images/Image 1.png" alt="">
+                <div class="card-img-overlay d-flex flex-column justify-content-center">
+                  <h4 class="card-title">Keep tasks in <br>
+                    one place</h4>
+                  
+                  <p class="card-text text-black mt-6 mb-4">Save time, avoid losing work and <br>
+                    information, delegate, and track tasks to <br>
+                    stay on schedule </p>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+
+
+
+
+    <section class="container mt-5 p-5">
+      <div class="row mt-5">
+        <div class="row mt-5 gy-5"></div>
+        <div class="row mt-5 gy-5"></div>
+        <div class="col-sm">
+          <img src="Images/Image 8.jpg" width="600px" height="auto" alt="">
+        </div>
+        <div class="col-sm">
+          <h2>Why do you need 
+            task management</h2>
+          <div class="row mt-5">
+            <p>Do you waste time organizing sticky notes, searching your email <br>
+              and apps for to-dos, and figuring out what to work on first? <br>
+              Then you need one solution to prioritize your tasks, manage <br>
+              your time, and meet your deadlines.</p>
+          </div>
+          <div class="row mt-2"></div>
+          <button type="button" class="btn rounded-pill button2" display="inline-block" >Learn more</button>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section class="container mt-5 p-5">
+      <div class="row mt-5">
+        <div class="row mt-5 gy-5"></div>
+        <div class="row mt-5 gy-5"></div>
+        <div class="col-sm-6">
+          <h2>Seamless Team 
+            Workflow & Efficient</h2>
+          <div class="row mt-5">
+            <p>Do you waste time organizing sticky notes, searching your email <br>
+              and apps for to-dos, and figuring out what to work on first? <br>
+              Then you need one solution to prioritize your tasks, manage <br>
+              your time, and meet your deadlines.</p>
+          </div>
+          <a href="https://www.apple.com/app-store/"><img src="Images/applelogo.png" width="60px" height="60px" alt=""></a>
+          <a href="https://play.google.com/store/apps"><img src="Images/playstore.png" width="70px" height="50px" alt=""></a>
+        </div>
+        <div class="col-sm-6">
+            <img src="Images/Image 7.jpg" width="600px" height="auto" alt="">
+        </div>
+        
+
+        
+      </div>
+    </section>
+
+
+
+
+    
+    <section class="container">
+      <div class="row mt-5 gy-5">
+        <div class="col-sm-12 text-center mb-5">
+          <h1>Trust us and feel free to try our service</h1>
+        </div>
+        <div class="row col-sm-12 ">
+          <div class="col-sm-3">
+            <img src="Images/Image 4.jpg" height="250px" width="250px" alt="">
+          </div>
+          <div class="col-sm-6 mt-5 p-5">
+            <h1 class="text-center larger">100000</h1>
+          </div>
+          <div class="col-sm-3">
+            <img src="Images/Image 5.jpg" height="350px" width="350px" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 gy-5"></div>
+    </section>
+
+
+
+    <hr>
+
+    <section>
+      <div class="container col-sm-12 py-5 text-center mt-5 p-5">
+        <div class="row mt-3">
+          <h1>Get better work done</h1>
+          <p class="col-sm fs-6">See why millions of people across 195 <br>
+            countries use Dash.</p>
+      
+          <form name="form2" action="#">
+            <div class="form-group mt-3">                   
+              <input type="email" name='text2' id="email" class="form-control" style="width: 250px;" placeholder="Name@company.com" required>
+                  
+              <input type="submit" name="Validate" class="btn rounded-pill button2" display="inline-block" value="Try It Free" onclick="ValidateEmail(document.form2.text2)" >
+                
+            </div>
+          </form>
+
+          <script src="email2.js"></script>
+        </div>
+       
+      </div>
+    </section>
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  </body>
+</html>
